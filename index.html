@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <!--My CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
-<!--Import materialize.css-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+
 </head>
 
 <body>
@@ -20,42 +18,122 @@
         <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
             <a class="pure-menu-heading" href="">The Fitness Resource</a>
         </div>
-
-        <div class="container-jumbo">
+        <!--LANDING PAGE-->
+        <div class="container-landing">
             <div class="jumbotron">
-                <p class="jumbo-p">RAISE<br>THE<br>BAR
+                <p class="jumbo-p">RAISE
+                    <br>THE
+                    <br>BAR
                 </p>
-                <p class="splash-subhead">
-                    Whether you're looking to trim down for a special event, get that seriously shredded beach bod you've always wanted, or just want to make some citness gainz, THe Fitness Resource is here for you every step of the way!
+                <p class="jumbo-subhead">
+                    Whether you're looking to trim down for a special event, get that seriously shredded beach bod
+                    you've always wanted, or just
+                    want to make some serious gainz, The Fitness Resource is here for you every step of the way!
                 </p>
-             </div>
+                <p>
+                    <p class="button-get-started">
+                        <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
+                    </p>
+            </div>
         </div>
-        <div class="container-body">
-                    <div class="pure-g">
-                            <div class="pure-u-1-3"><p>
-                                    Personalized strength training tailored to your fitness level.
-                            </p>
-                    </div>
-                    <div class="pure-u-1-3"><p>
-                            A schedule to maximize your lifting sessions- and your time.
-                    </p>          
-                        </div>
-                        <div class="pure-u-1-3"><p>           
-                                Lifting routines to make your goals challenging yet attainable.
-                            </p>
-                        </div>
-                    </div>
+        <!--HEALTH FORM-->
+        <div class="container-health">
+            <div class="jumbotron">
+                <p class="jumbo-p-2">Please fill out our simple 5 question health form to get started
+                </p>
+
+                <form class="pure-form pure-form-stacked">
+                    <label for="injuries">Do you have any current injuries?</label>
+                    <select id="injuries">
+                        <option>Choose an option.</option>
+                        <option value="a">Yes</option>
+                        <option value="b">No</option>
+                    </select>
+
+                    <label for="medication">Are you currently taking any prescription medication?</label>
+                    <select id="medication">
+                        <option>Choose an option.</option>
+                        <option value="a">Yes</option>
+                        <option value="b">No</option>
+                    </select>
+
+                    <label for="family-history">Do you have a family histroy of heart attacks?</label>
+                    <select id="family-history">
+                        <option>Choose an option.</option>
+                        <option value="a">Yes</option>
+                        <option value="b">No</option>
+                    </select>
+
+                    <label for="alcohol-use">Do you drink alcohol more than 3 times per week?</label>
+                    <select id="alcohol-use">
+                        <option>Choose an option.</option>
+                        <option value="a">Yes</option>
+                        <option value="b">No</option>
+                    </select>
+
+                    <label for="hospital">Have you been recently hospitalized?</label>
+                    <select id="hospital">
+                        <option>Choose an option.</option>
+                        <option value="a">Yes</option>
+                        <option value="b">No</option>
+                    </select>
+
+                    <p class="button-submit">
+                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+        <!--GOALS-->
+        <div class="container-goals">
+            <div class="jumbotron">
+                <p class="jumbo-p-2">Please give us some info about you.
+                </p>
+                <form class="pure-form pure-form-stacked">
+                    <label for="days-per-week">How many days per week will you be working out?</label>
+                    <select id="days-per-week">
+                        <option>Choose an option.</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+
+                    <label for="fitness-goals">What are your fitness goals?</label>
+                    <select id="fitness-goals">
+                        <option>Choose an option.</option>
+                        <option value="gf">General Fitness</option>
+                        <option value="pl">Powerlifting</option>
+                        <option value="bb">Body building</option>
+                    </select>
+
+                </form>
+
             </div>
 
 
+            <!--FINAL WORKOUT-->
+            <div class="container-workout">
+                <div class="jumbotron">
+                    <p class="jumbo-p-2">Recommended workout schedule!
+                    </p>
+                </div>
+            </div>
+                <!--JAVASCRIPT-->
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script type="text/javascript" src="assets/javascript/landing-page.js"></script>
+                <script type="text/javascript" src="assets/javascript/health-form.js"></script>
+                <script type="text/javascript" src="assets/javascript/goals.js"></script>
+                <script type="text/javascript" src="assets/javascript/final-workout.js"></script>
 
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="./assets/javascript/start-page.js"></script>
-        <script type="text/javascript" src="./assets/javascript/health-form.js"></script>
-        <script type="text/javascript" src="./assets/javascript/goals.js"></script>
-        <script type="text/javascript" src="./assets/javascript/final-workout.js"></script>
-        <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+
+
 </body>
 
 </html>

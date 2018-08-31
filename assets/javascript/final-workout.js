@@ -17,6 +17,8 @@ var exercises = [];
                 console.log(response.results[i].name);
 
                 
+                
+
             }
             
         })
