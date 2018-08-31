@@ -1,0 +1,53 @@
+.home-menu {
+    background: #2d3e50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.splash-container {
+    background: url('https://newfieldpress.org/wp-content/uploads/2017/11/hull-gym-weights.jpg');
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+    overflow: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.splash-head {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-weight: 100;
+    line-height: 1em;
+    text-align: center;
+}
+
+.splash {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.splash-subhead{
+    color: white;
+}
+
+
