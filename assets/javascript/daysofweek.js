@@ -1,8 +1,4 @@
-{
-    "count": 7,
-    "next": null,
-    "previous": null,
-    "results": [
+var daysOfWeek = [
         {
             "id": 1,
             "day_of_week": "Monday"
@@ -32,4 +28,3 @@
             "day_of_week": "Sunday"
         }
     ]
-}

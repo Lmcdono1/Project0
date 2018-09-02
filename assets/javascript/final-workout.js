@@ -22,6 +22,12 @@ var exercises = ["Squats", "Bench Press"];
 
                     if (exercise.name == exercises[j]){
                         console.log(exercise);
+                        for (var k = 0; k < exercise.equipment.length; k++){
+                            console.log(exercise.equipment[k]);
+                            console.log(equipment[exercise.equipment[k]].name);
+                            
+
+                        }
                         $(".workout").append(JSON.stringify(exercise));
 
                     }

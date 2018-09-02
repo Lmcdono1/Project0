@@ -1,8 +1,4 @@
-{
-    "count": 10,
-    "next": null,
-    "previous": null,
-    "results": [
+var equipment =  [
         {
             "id": 1,
             "name": "Barbell"
@@ -44,4 +40,3 @@
             "name": "SZ-Bar"
         }
     ]
-}

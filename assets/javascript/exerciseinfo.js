@@ -1,8 +1,4 @@
-{
-    "count": 531,
-    "next": "https://wger.de/api/v2/exerciseinfo/?format=json&page=2",
-    "previous": null,
-    "results": [
+var exerciseInfo = [
     {
     "name": "",
     "category": {
@@ -345,4 +341,4 @@
     "equipment": []
     }
     ]
-    }
+    

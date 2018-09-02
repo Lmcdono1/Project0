@@ -1,8 +1,4 @@
-{
-    "count": 15,
-    "next": null,
-    "previous": null,
-    "results": [
+var muscle = [
     {
     "id": 2,
     "name": "Anterior deltoid",
@@ -79,4 +75,4 @@
     "is_front": false
     }
     ]
-    }
+    

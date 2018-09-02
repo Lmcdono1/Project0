@@ -1,8 +1,4 @@
-{
-    "count": 204,
-    "next": "https://wger.de/api/v2/exerciseimage/?format=json&page=2",
-    "previous": null,
-    "results": [
+var exerciseImage = [
     {
     "id": 1,
     "license_author": "",
@@ -184,4 +180,4 @@
     "exercise": 129
     }
     ]
-    }
+    

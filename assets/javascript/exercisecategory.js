@@ -1,8 +1,4 @@
-{
-    "count": 7,
-    "next": null,
-    "previous": null,
-    "results": [
+var exerciseCategory = [
         {
             "id": 10,
             "name": "Abs"
@@ -32,4 +28,3 @@
             "name": "Shoulders"
         }
     ]
-}
