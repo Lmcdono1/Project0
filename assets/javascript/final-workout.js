@@ -1,8 +1,8 @@
 // get the API 
 // create a variable to hold the exercises that you want to grab from it
-var queryURL = "https://wger.de/api/v2/exercise/?format=json&limit=530&language=2";
+var queryURL = "https://wger.de/api/v2/exercise/?format=json&limit=530&language=2&status=2";
 
-var exercises = [];
+var exercises = ["Squats", "Bench Press"];
 
 
 // create a function to query the api 
@@ -14,7 +14,19 @@ var exercises = [];
             method: "GET"
         }).then(function(response){
             for(var i = 0 ; i < response.results.length; i++){
-                console.log(response.results[i].name);
+
+                var exercise = response.results[i];
+                // console.log(exercise);
+
+                for (var j = 0; j < exercises.length; j++){
+
+                    if (exercise.name == exercises[j]){
+                        console.log(exercise);
+                        $(".workout").append(JSON.stringify(exercise));
+
+                    }
+                    
+                }
 
                 
                 
@@ -110,10 +122,6 @@ var exercises = [];
 
 
 // if days = 7 && workout == general fitness
-
-
-
-
 
 
 
