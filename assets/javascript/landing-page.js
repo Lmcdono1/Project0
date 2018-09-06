@@ -9,14 +9,15 @@ $("#hide").ready(function(){
 });
 //Get Started Button
 $("#getStarted").click(function() {
-    $("#landing").toggle("slow");
-    $("#health").toggle("slow");
+    $("#landing").toggle({ effect: "scale", direction: "horizontal" });
+    $("#health").toggle({ effect: "scale", direction: "horizontal" });
     // $("#hide").click(function(){
     //     $("#landing").hide();
     //     $("#workout").toggle("slow");
     //     $("#goals").toggle("slow");
     // });
   });
+
 
 //Health Form Submission
 $("#submitHealth").click(function(event) {
@@ -51,10 +52,10 @@ $("#submitHealth").click(function(event) {
     if (conceptName === "Yes") {
         //alert("oh no!!");
         $("#health").fadeOut("slow");
-        $("#alert").toggle("slow");
+        $("#alert").toggle("puff");
     } else {
-        $("#health").toggle("slow");
-        $("#goals").toggle("slow");
+        $("#health").toggle("puff");
+        $("#goals").toggle("puff");
     }
     //$("#health").toggle("slow");
     //$("#goals").toggle("slow");
@@ -72,15 +73,15 @@ $("#submitHealth").click(function(event) {
   });
 
 $("#continue").click(function(event) {
-    $("#alert").toggle("slow");
-    $("#goals").toggle("slow");
+    $("#alert").toggle("puff");
+    $("#goals").toggle("puff");
 });
 
 //Goals Submission
 $("#submitGoals").click(function(event) {
     event.preventDefault();
-    $("#goals").toggle("slow");
-    $("#workout").toggle("slow");
+    $("#goals").toggle("puff");
+    $("#workout").toggle("puff");
     //$("#hide").click(function(){
         //$("#landing").hide();
         //$("#health").toggle("slow");

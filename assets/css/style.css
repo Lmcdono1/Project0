@@ -3,6 +3,8 @@
     color: white;
     padding: 10px;
     text-align: left;
+    overflow: auto;
+    position: absolute;
 }
 
 .home-menu .pure-menu-heading {
@@ -11,6 +13,7 @@
     font-size: 30px;
     /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 .footer{
@@ -85,6 +88,7 @@ button.pure-button-primary {
     color: white;
     font-size: 120%;
     padding: 0.5em 2em;
+    border-radius: 25px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -236,6 +240,7 @@ button.pure-button-primary {
     text-align: center;
 }
 
+<<<<<<< HEAD
 /*GOALS_____________________________*/
 
 button.accordion{
@@ -286,3 +291,6 @@ button.accordion{
     width:80%;
     text-align: center;
   }
+=======
+/*FINAL WORKOUT_____________________________*/
+>>>>>>> master
