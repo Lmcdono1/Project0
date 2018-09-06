@@ -559,10 +559,9 @@ if ($("#days-per-week").val() == 7 && $("#fitness-goals").val() == "gf") {
     exercises = ["Speed Deadlifts", "Shrugs, Barbells", "Pull-ups","Lat Pull Down (Straight Back)","Wide-grip Pulldown", "Underhand Lat Pull Down", "Biceps Curl with Cable","Hammercurls on Cable", "Barbell Ab Rollout" ];
     $(".day-6").append(generateWorkout());
 
-    $(".day-7").append("<h2>Day 7 - Stretch, Sleep, Eat, Recover. Don't work out every day.<h2>");
+    $(".day-7").append("<h2>Day 6<h2>");
+    exercises = ["Squat", "Bench Press", "Deadlifts", "Barbell Lunges", "Shoulder Press, Barbell", "Bent Over Rowing"];
+    $(".day-7").append(generateWorkout()); 
 }
 
 
-
-   
-    

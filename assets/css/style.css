@@ -1,6 +1,5 @@
-/*HEADER_________________________________*/
+/*HEADER&FOOTER_________________________________*/
 .home-menu {
-    background: darkslategray;
     color: white;
     padding: 10px;
     text-align: left;
@@ -9,13 +8,24 @@
 .home-menu .pure-menu-heading {
     color: white;
     font-weight: 500;
-    font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
 }
 
-LANDING PAGE_________________________________
-.container-jumbo {
-    /*background: url('https://newfieldpress.org/wp-content/uploads/2017/11/hull-gym-weights.jpg');*/
+.footer{
+    text-align: center;
+    background-color: rgb(46, 46, 46);
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #b0acb0;
+    border-top: 4px solid #4aaaa5;
+}
+
+/*LANDING PAGE_________________________________*/
+.container-body {
+    background-image: url('../images/IMG_3165.jpg');
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -28,62 +38,203 @@ LANDING PAGE_________________________________
 }
 
 .jumbo-p {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
-    color: black;
+    color: white;
     font-weight: 100;
     line-height: 1em;
     text-align: center;
+    font-weight: bold;
+    
 }
 
 .jumbotron {
     width: 80%;
-    height: 70%;
+    height: 90%;
     margin: auto;
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
     text-align: center;
+    
 }
 
 .jumbo-subhead{
     color: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.button-get-started{
-
-}
-
-/*HEALTH FORM_________________________________*/
-.container-jumbo-2 {
-    /*background: url('https://newfieldpress.org/wp-content/uploads/2017/11/hull-gym-weights.jpg');*/
-    z-index: 1;
+.content-wrapper {
+    background-color: teal;
+    position: absolute;
+    top: 60%;
     width: 100%;
-    height: 100%;
+    min-height: 15%;
+    z-index: 2;
+    color: white;
+    
+}
+
+.fit-icons{
+    width: 100px;
+    height: 100px;
+    
+}
+
+button.pure-button-primary {
+    background: limegreen;
+    color: white;
+    font-size: 120%;
+    padding: 0.5em 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*a.pure-button-primary {
+    background: limegreen;
+    color: white;
+    border-radius: 5px;
+    font-size: 120%;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    border-color: teal;
+    border-width: 2px;
+}*/
+
+.content{
+    padding: 0em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content-subhead{
+    padding: 0em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*HEALTH-FORM & GOALS_____________________________*/
+.jumbotron-2{
+   background-color: teal;
+   margin-top: 8%;
+   margin-left: 25%;
+   margin-right: 25%;
+   margin-bottom: 5%;
+   /*margin: 0 auto;
+   /*width: 100%;*/
+   text-align: center;
+   padding-top: 1%;
+   padding-bottom: 2%;
+   border-radius: 25px;
+   border: 3px solid darkslategray;
+   font-family: 'Quicksand', sans-serif;
+   /*position: absolute;*/
+   
+  
+}
+
+
+.jumbo-p-2{
+    font-size: 20px;
+    color: lime;
+   
+}
+
+.form.pure-form-stacked{
+    text-align: center;
+    color: white;
+}
+
+#answer1{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+
+}
+#answer2{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+}
+#answer3{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+
+}
+#answer4{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+
+}
+#answer5{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+
+}
+
+#answer6{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+
+}
+
+#answer7{
+    text-align: center;
+    margin-left: 38%;
+    margin-right: 37%;
+
+}
+
+#question{
+    color: white;
+    font-size: 18px;
+}
+
+.jumbo-p-3{
+    font-size: 20px;
+    color: lime;
+   
+}
+
+/*ALERT_____________________________*/
+.alert {
+    padding: 20px;
+    background-color: #EC7063;
+    color: white;
     position: fixed;
-    overflow: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    top: 7px;
+    left: 18%;
+    width: 60%;
+    margin-top: 15%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 25px;
 }
 
-.jumbo-p-2 {
-    font-size: 35px;
+.button-success {
+    color: white;
+    border: 2px solid white;
+    background-color: #EC7063;
+    font-size: 120%;
+    padding: 0.5em 2em;
+    border-radius: 25px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
     font-weight: bold;
-    color: black;
-    font-weight: 100;
-    line-height: 1em;
+    /*float: right;*/
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
     text-align: center;
 }
 
-.pure-form .pure-form-stacked{
-    text-align: center;
-}
+/*GOALS_____________________________*/
 
-/*GOALS_________________________________*/
-
-
-/*FINAL WORKOUT_________________________________*/
-.bold-font{
-    font-weight: bold;
-}
