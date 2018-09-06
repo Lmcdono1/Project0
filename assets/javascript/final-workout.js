@@ -4,6 +4,17 @@ var queryURL = "https://wger.de/api/v2/exercise/?format=json&limit=530&language=
 
 var exercises = [];
 
+var fitnessGoal = "";
+var daysPerWeek = 0;
+
+$("#fitness-goals").change(function() {
+    fitnessGoal = $(this).children(":selected").attr("value");
+  });
+
+  $("#daysPerWeek").change(function() {
+    daysPerWeek = $(this).children(":selected").attr("value");
+  });
+
 // create a function to query the api 
 function generateWorkout() {
 
@@ -44,6 +55,7 @@ function generateWorkout() {
 
                     console.log(exercise);
                     exerciseDiv.append(exercise.name);
+                    exerciseDiv.append(generateReps());
                     exerciseInfoDiv.append(exercise.description);
                     workoutDiv.append("----------------------------------------------------------------");
 
@@ -62,12 +74,12 @@ function generateWorkout() {
                     }
                     for (var m = 0; m < exercise.equipment.length; m++) {
                         // console.log(exercise.equipment[m]);
-                        equipmentDiv.append(equipment[exercise.equipment[m]].name + ", \n");
+                        equipmentDiv.append(equipment[exercise.equipment[m]].name + " \n");
                     }
                     for (var n = 0; n < exerciseImage.length; n++) {
 
                         if (exercise.id == exerciseImage.id) {
-                            equipmentDiv.append(equipment[exercise.equipment[n]].name + ", \n");
+                            equipmentDiv.append(equipment[exercise.equipment[n]].name + " \n");
                         }
                     }
                 }
@@ -81,11 +93,23 @@ function generateWorkout() {
 function generateReps(){
     var reps = 0;
     var sets = 0;
-    
-    if $("#fitness-goals").val() == "pl"){
+   
+
+    if(fitnessGoal == "pl"){
         reps = Math.floor(Math.random() * 6);
-        sets = Math.floor(Math.random() * 6);
+        sets = Math.floor(Math.random() * 3) +3;
     }
+
+    if( fitnessGoal == "bb"){
+        reps = Math.floor(Math.random() * 6)+ 6;
+        sets = Math.floor(Math.random() * 3)+3;
+    }
+    if( fitnessGoal== "pl"){
+        reps = 10;
+        sets = 3;
+    }
+
+    return "<h4>Perform " + sets + " sets of " + reps + " reps. </h4>"
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -110,7 +134,8 @@ if ($("#days-per-week").val() == 1 && $("#fitness-goals").val() == "pl") {
 
 if ($("#days-per-week").val() == 2 && $("#fitness-goals").val() == "pl") {
 
-    $(".day-1").append("<h2>Day 1<h2>");
+    $(".day-1").append("<h2>Day 1</h2>");
+    $(".day-1").append(generateReps());
     exercises = ["Squat", "Bench Press", "Deadlifts", "Barbell Lunges", "Shoulder Press, Barbell", "Bent Over Rowing", "Plank"];
     $(".day-1").append(generateWorkout());
 
@@ -537,9 +562,7 @@ if ($("#days-per-week").val() == 7 && $("#fitness-goals").val() == "gf") {
     $(".day-7").append("<h2>Day 7 - Stretch, Sleep, Eat, Recover. Don't work out every day.<h2>");
 }
 
-$(".day-1").append("<h2>Day 1<h2>");
-exercises = ["Squat","Front Squats","Low Box Squat - Wide Stance", "Bulgarian Split Squats", "Barbell Hack Squats", "Good Mornings", "Barbell Lunges","Pistol Squat", "Leg Presses (narrow)", "Weighted Step-ups", "Leg Curls (laying)", "Leg Extension","Standing Calf Raises","Sitting Calf Raises", "Bench Press","Pause Bench", "Incline Bench Press", "Close-grip Bench Press", "Tricep Dips", "Push Ups","Incline Dumbbell Flye", "Fly With Cable", "Tricep Extensions on Cable", "Shoulder Press, Barbell", "Shoulder Press, Dumbbell", "Arnold Shoulder Press", "High Pull", "Facepull", "Lateral Raises","Front Raises", "Tricep Dumbbell Kickback",  "Deadlifts", "Speed Deadlifts", "Shrugs, Barbells", "Pull-ups", "Bent Over Rowing", "Bentover Dumbbell Rows","Chin-ups","Lat Pull Down (Straight Back)", "Long-Pulley (low Row)", "Pendelay Rows", "Rowing, T-bar", "Wide-grip Pulldown", "Underhand Lat Pull Down", "Biceps Curls with Barbell", "Biceps Curls with Dumbbell", "Biceps Curl with Cable","Hammercurls on Cable", "Hammercurls", "Plank", "Barbell Ab Rollout", "Hanging Leg Raises", "Cable Woodchoppers", "Side Plank", "Trunk Rotation With Cable", "Flutter Kicks" ];
-$(".day-1").append(generateWorkout());
+
 
    
     
