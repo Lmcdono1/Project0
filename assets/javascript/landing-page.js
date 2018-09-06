@@ -25,27 +25,27 @@ $("#submitHealth").click(function(event) {
     event.preventDefault();
 
     var conceptName;
-    console.log("conceptName = "+ $("#answer1").find(":selected").text());
+    // console.log("conceptName = "+ $("#answer1").find(":selected").text());
     if ($("#answer1").find(":selected").text() === "Yes") {
         conceptName = "Yes";
     }  
     //var conceptName = $("#answer2").find(":selected").text();
-    console.log("conceptName = "+ $("#answer2").find(":selected").text());
+    // console.log("conceptName = "+ $("#answer2").find(":selected").text());
     if ($("#answer2").find(":selected").text() === "Yes") {
         conceptName = "Yes";
     }  
     //var conceptName = $("#answer3").find(":selected").text();
-    console.log("conceptName = "+ $("#answer3").find(":selected").text());
+    // console.log("conceptName = "+ $("#answer3").find(":selected").text());
     if ($("#answer3").find(":selected").text() === "Yes") {
         conceptName = "Yes";
     }  
     //var conceptName = $("#answer4").find(":selected").text();
-    console.log("conceptName = "+ $("#answer4").find(":selected").text());
+    // console.log("conceptName = "+ $("#answer4").find(":selected").text());
     if ($("#answer4").find(":selected").text() === "Yes") {
         conceptName = "Yes";
     }  
     //var conceptName = $("#answer5").find(":selected").text();
-    console.log("conceptName = "+ $("#answer5").find(":selected").text());
+    // console.log("conceptName = "+ $("#answer5").find(":selected").text());
     if ($("#answer5").find(":selected").text() === "Yes") {
         conceptName = "Yes";
     }  
