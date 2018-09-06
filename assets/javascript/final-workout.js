@@ -565,3 +565,4 @@ if ($("#days-per-week").val() == 7 && $("#fitness-goals").val() == "gf") {
 }
 
 
+
