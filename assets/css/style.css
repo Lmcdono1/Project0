@@ -9,7 +9,8 @@
     color: white;
     font-weight: 500;
     font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: 'Quicksand', sans-serif;
 }
 
 .footer{
@@ -34,11 +35,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-
 }
 
 .jumbo-p {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     color: white;
     font-weight: 100;
@@ -60,7 +60,7 @@
 
 .jumbo-subhead{
     color: white;
-   
+    font-family: 'Quicksand', sans-serif;
 }
 
 .content-wrapper {
@@ -71,7 +71,7 @@
     min-height: 15%;
     z-index: 2;
     color: white;
-
+    
 }
 
 .fit-icons{
@@ -80,7 +80,16 @@
     
 }
 
-a.pure-button-primary {
+button.pure-button-primary {
+    background: limegreen;
+    color: white;
+    font-size: 120%;
+    padding: 0.5em 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*a.pure-button-primary {
     background: limegreen;
     color: white;
     border-radius: 5px;
@@ -89,9 +98,15 @@ a.pure-button-primary {
     border-radius: 5px;
     border-color: teal;
     border-width: 2px;
-}
+}*/
 
 .content{
+    padding: 0em;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content-subhead{
     padding: 0em;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
@@ -118,13 +133,6 @@ a.pure-button-primary {
   
 }
 
-button.pure-button-primary {
-    background: limegreen;
-    color: white;
-    font-size: 120%;
-    padding: 0.5em 2em;
-    
-}
 
 .jumbo-p-2{
     font-size: 20px;
@@ -195,25 +203,38 @@ button.pure-button-primary {
 /*ALERT_____________________________*/
 .alert {
     padding: 20px;
-    background-color: #f44336;
+    background-color: #EC7063;
     color: white;
+    position: fixed;
+    top: 7px;
+    left: 18%;
+    width: 60%;
+    margin-top: 15%;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 25px;
+}
+
+.button-success {
+    color: white;
+    border: 2px solid white;
+    background-color: #EC7063;
+    font-size: 120%;
+    padding: 0.5em 2em;
+    border-radius: 25px;
 }
 
 .closebtn {
     margin-left: 15px;
     color: white;
     font-weight: bold;
-    float: right;
+    /*float: right;*/
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
     transition: 0.3s;
+    text-align: center;
 }
-
-.closebtn:hover {
-    color: black;
-}
-
 
 /*GOALS_____________________________*/
 

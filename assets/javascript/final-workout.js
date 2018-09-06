@@ -528,3 +528,7 @@ if ($("#days-per-week").val() == 7 && $("#fitness-goals").val() == "gf") {
     exercises = ["Squat", "Bench Press", "Deadlifts", "Barbell Lunges", "Shoulder Press, Barbell", "Bent Over Rowing"];
     $(".day-7").append(generateWorkout()); 
 }
+
+$(".day-7").append("<h2>Day 6<h2>");
+exercises = ["Squat", "Bench Press", "Deadlifts", "Barbell Lunges", "Shoulder Press, Barbell", "Bent Over Rowing"];
+$(".day-7").append(generateWorkout()); 
