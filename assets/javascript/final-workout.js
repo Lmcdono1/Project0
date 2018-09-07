@@ -257,6 +257,8 @@ function mainProgram() {
         //     $("#alert").hide();
         //  });
         // break;
+
+        location.reload();
     }
 
     // console.log("daysPerWeek: " + daysPerWeek);
