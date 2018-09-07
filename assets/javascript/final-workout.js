@@ -245,6 +245,19 @@ function generateReps() {
 
 function mainProgram() {
 
+    if (daysPerWeek == 0 || fitnessGoal === "") {
+        alert("Please make sure you have chosen a fitness goal and the number of days you can commit to working out this week");
+        
+        // $("#landing").toggle({ effect: "scale", direction: "horizontal" });
+        // $("#health").toggle({ effect: "scale", direction: "horizontal" });
+        // $("#hide").ready(function(){
+        //     $("#health").hide();
+        //     $("#landing").hide();
+        //     $("#workout").hide();
+        //     $("#alert").hide();
+        //  });
+        // break;
+    }
 
     // console.log("daysPerWeek: " + daysPerWeek);
     // console.log("Fitness goal: " + fitnessGoal);
@@ -432,7 +445,7 @@ function mainProgram() {
 
 
     // if days = 5 && workout == general fitness
-    if (daysPerWeek == 5 && fitnessGoal == "bb") {
+    if (daysPerWeek == 5 && fitnessGoal == "gf") {
 
         $(".day-1").append(generateWorkout("Day-1", "gf-day-5-1"));
         $(".day-2").append(generateWorkout("Day-2", "gf-day-5-2"));
