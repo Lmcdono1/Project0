@@ -155,7 +155,7 @@ function generateWorkout(day, exerciseDay) {
             for (var j = 0; j < exerciseList.length; j++) {
 
                 if (exercise.name == exerciseList[j]) {
-                    var exerciseDiv = $("<div>");
+                    var exerciseDiv = $("<div class='exercise'></div>");
                     var exerciseInfoDiv = $("<div>");
                     var exerciseCategoryDiv = $("<div>");
                     var muscleDiv = $("<div>");
