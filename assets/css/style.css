@@ -240,7 +240,6 @@ button.pure-button-primary {
     text-align: center;
 }
 
-<<<<<<< HEAD
 /*GOALS_____________________________*/
 
 button.accordion{
@@ -285,12 +284,9 @@ button.accordion{
   
   div.panel.show{
     opacity:1;
-    max-height:5000px;
+    max-height:10000px;
     padding:8px;
     margin:5px auto;
     width:80%;
     text-align: center;
   }
-=======
-/*FINAL WORKOUT_____________________________*/
->>>>>>> master
