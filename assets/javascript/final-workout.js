@@ -155,7 +155,7 @@ function generateWorkout(day, exerciseDay) {
             for (var j = 0; j < exerciseList.length; j++) {
 
                 if (exercise.name == exerciseList[j]) {
-                    var exerciseDiv = $("<div>");
+                    var exerciseDiv = $("<div class='exercise'></div>");
                     var exerciseInfoDiv = $("<div>");
                     var exerciseCategoryDiv = $("<div>");
                     var muscleDiv = $("<div>");
@@ -245,6 +245,19 @@ function generateReps() {
 
 function mainProgram() {
 
+    if (daysPerWeek == 0 || fitnessGoal === "") {
+        alert("Please make sure you have chosen a fitness goal and the number of days you can commit to working out this week");
+        
+        // $("#landing").toggle({ effect: "scale", direction: "horizontal" });
+        // $("#health").toggle({ effect: "scale", direction: "horizontal" });
+        // $("#hide").ready(function(){
+        //     $("#health").hide();
+        //     $("#landing").hide();
+        //     $("#workout").hide();
+        //     $("#alert").hide();
+        //  });
+        // break;
+    }
 
     // console.log("daysPerWeek: " + daysPerWeek);
     // console.log("Fitness goal: " + fitnessGoal);
